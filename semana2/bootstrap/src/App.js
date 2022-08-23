@@ -1,16 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-import Navbar from "./components/Navbar"
-import Carrousel from "./components/Carrousel"
-
-function App() {
+import { Route, BrowserRouter, Routes } from "react-router-dom";
+import VistaPrincipal from "./views/VistaPrincipal";
+export default function App() {
   return (
-    <div className="App">
-      <Navbar/>
-      <Carrousel/>
-
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route exact path="/pepitovista" element={<VistaPrincipal/>}></Route> 
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
-
-export default App;

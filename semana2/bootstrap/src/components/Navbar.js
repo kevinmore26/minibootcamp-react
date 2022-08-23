@@ -8,10 +8,12 @@ import imagen from "../assets/amazon.png";
 
 function NavScrollExample() {
   return (
-    <Navbar expand="lg" style={{ backgroundColor: "#131921" }}>
+ 
+
+    <Navbar expand="lg" style={{ backgroundColor: "#3D3D3D" }}>
       <Container fluid>
 
-        <img src={imagen} style={{ height: "50px" }}></img>
+        <img src="https://www.linio.com.pe/assets/images/logos/linio-by-fb-92fa2edd4c.svg" style={{ height: "35px" }}></img>
 
         <Form className="d-flex">
           <Form.Control
@@ -30,6 +32,8 @@ function NavScrollExample() {
       
       </Container>
     </Navbar>
+
+
   );
 }
 
