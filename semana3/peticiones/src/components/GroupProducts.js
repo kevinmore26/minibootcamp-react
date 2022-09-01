@@ -23,6 +23,7 @@ export default function GroupProducts({ productos }) {
                 <span className="fw-bold">
                   S/{aquisealmacenacuandorecorremos.precio}
                 </span>
+                
               </div>
             </div>
           </div>
