@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function GroupProducts({ productos }) {
   console.log(productos);
 
@@ -7,19 +9,20 @@ export default function GroupProducts({ productos }) {
         {productos.map((aquisealmacenacuandorecorremos, i) => (
           <div className="col-6 col-lg-3" key={i}>
             <div className="card mb-4">
-              <img
-                src={aquisealmacenacuandorecorremos.imagen}
-                alt={aquisealmacenacuandorecorremos.imagen}
-                className="card-img-top"
-              />
+              <Link to={`/detalle/${aquisealmacenacuandorecorremos.id}`}>
+                <img
+                  src={aquisealmacenacuandorecorremos.imagen}
+                  alt={aquisealmacenacuandorecorremos.imagen}
+                  className="card-img-top"
+                />
+              </Link>
               <div className="card-body">
                 <h6 className="card-title">
-                    {aquisealmacenacuandorecorremos.nombre}
+                  {aquisealmacenacuandorecorremos.nombre}
                 </h6>
                 <span className="fw-bold">
-                    S/{aquisealmacenacuandorecorremos.precio}
+                  S/{aquisealmacenacuandorecorremos.precio}
                 </span>
-
               </div>
             </div>
           </div>
